@@ -1,0 +1,7 @@
+在解压补丁后，将补丁中的 Lindo3_0.dll Lingf90.dll 复制到你的LINGO的安装目录中覆盖原来的这两个文件 
+接下来，运行补丁中的keygen，点击Generate,获得注册码，将注册码（就是长长的那一串字母了）复制下来 
+最后，运行LINGO 9.0，点击File,再点击License,将刚才的注册码复制到对话框中，点击OK就行了 
+
+现在看看Help菜单下的About Lingo,是不是所有变量都Unlimited(没有限制)了 ^_^ 
+
+注：以上方法已经在安装Windows XP的电脑里里测试通过 

@@ -1,0 +1,37 @@
+a0=int(input("请输入初始点："))
+h=float(input("请输入初始步长："))
+a1=a0
+a2=a1+h
+f1=(260-2*a1)*(350-2*a1)*a1
+f2=(260-2*a2)*(350-2*a2)*a2
+if f2>f1:
+    a3=a2+h
+    f3=(260-2*a3)*(350-2*a3)*a3
+    while(f2<f3):
+        h=2*h
+        a1=a2
+        a2=a3
+        f1=f2
+        f2=f3
+        a3=a2+h
+        f3=(260-2*a3)*(350-2*a3)*a3
+    print("搜索区间为："+'['+str(round(a1,2))+','+str(round(a3,2))+']')
+else:
+    h=-h
+    temp=a2
+    a2=a1
+    a1=temp
+    a3=a2+h
+    temp=f2
+    f2=f1
+    f1=temp
+    f3=(260-2*a3)*(350-2*a3)*a3
+    while(f2<f3):
+        h=2*h
+        a1=a2
+        a2=a3
+        f1=f2
+        f2=f3
+        a3=a2+h
+        f3=(260-2*a3)*(350-2*a3)*a3
+    print("搜索区间为："+'['+str(round(a3,2))+','+str(round(a1,2))+']')
